@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Autobiography — James Robert P. Palo</title>
+  <style>
+    :root{
+      --bg:#f4f6f8;
+      --card:#ffffff;
+      --accent:#111827;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2f6 60%);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 20px;
+    }
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+    }
+
+    /* Main Title */
+    .main-title{
+      text-align:center;
+      font-size:28px;
+      font-weight:700;
+      margin-bottom:25px;
+      color:#111827;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:20px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    /* Avatar with photo */
+    .avatar{
+      width:84px;
+      height:84px;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(16,24,40,0.08);
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    h1{font-size:22px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+    @media(min-width:860px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.06);
+      min-height:130px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start;
+    }
+    .card h2{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);line-height:1.45;font-size:14px}
+    .card.about{grid-column:1/-1}
+    .small{font-size:13px;color:var(--muted);margin-top:10px}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Main Header Title -->
+    <h1 class="main-title">My Autobiography</h1>
+
+    <header>
+      <!-- Replace 'james.jpg' with your actual photo file name -->
+      <div class="avatar">
+        <img src="James.png.jpg" alt="James Robert P. Palo">
+      </div>
+      <div>
+        <h1>James Robert P. Palo</h1>
+        <p class="lead">19 years old — Kalubihan, Pajac, Lapu-Lapu City</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card about">
+        <h2>About Me</h2>
+        <p>Hi! My name is James Robert P. Palo, 19 years old, and I currently live in Kalubihan, Pajac, Lapu-Lapu City. I was born on August 31, 2006, in Pajac, Lapu-Lapu City. I am the second among three siblings. I see myself as a very loving and understanding person who values my family and the people around me.</p>
+      </section>
+
+      <section class="card">
+        <h2>Educational Background</h2>
+        <p>I graduated elementary at age 11 (2018). I finished high school at age 15 but had limited high school experience because of the COVID-19 pandemic. I graduated senior high school at age 17 (2024). I did not go straight to college after graduation for personal reasons, and now I am a 1st-year college student.</p>
+      </section>
+
+      <section class="card">
+        <h2>My Hobbies</h2>
+        <p>I enjoy playing volleyball — it makes me happy and helps relieve stress. I also love watching series during my free time.</p>
+      </section>
+
+      <section class="card">
+        <h2>My Goals</h2>
+        <p>My main goal is to finish my studies and become a professional so I can help my parents financially and provide for what they need in the future.</p>
+      </section>
+
+      <section class="card">
+        <h2>Quick Facts</h2>
+        <p><strong>Age:</strong> 19 • <strong>Siblings:</strong> Second of three • <strong>Current status:</strong> 1st-year college student</p>
+      </section>
+
+    
+  </div>
+</body>
+</html>
